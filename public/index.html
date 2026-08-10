@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=straighten"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg position-sticky top-0 bg-white z-2">
+        <div class="container d-flex justify-content-between ">
+        <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="/index.html">
+            <img src="./assests/images/logos/birdlogo 1.png" alt="Feather Gallery Logo" style="height: 40px; width: auto;" class="object-fit-contain">
+            <span class="text-primary1 headline-font fw-bold fs-4">Feather Gallery</span>
+        </a>
+            <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-primary1 nav-contents d-flex  gap-4 ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link " id="homePagebtn">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/BirdMan.html">Bird Man of India</a>
+                    </li>
+                </ul>
+                <!-- <div >
+                    <button class="btn btn-outline-primary">Log In</button>
+                    <button class="btn btn-outline-secondary">Register</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section position-relative d-flex flex-column align-items-center justify-content-center text-center mb-5" >
+        <img class=" hero-bg" src="./assests/images/heroForestImg.jpg" alt="" >
+        <div class="hero-contents position-absolute px-4"> 
+            <h1 class="hero-title  headline-font mb-3">EXPLORE THE WORLD'S AVIAN WONDERS</h1>
+            <p class="hero-Subtitle headline-font ">Immerse yourself in the breathtaking beauty, intricate behaviors, and diverse habitats of birds from every corner of the globe.</p>
+            <form id="birdInputForm">
+                <div class="input-group hero-input m-auto ">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input class="form-control" id="birdInput" type="text" placeholder="Search Any Bird">
+                    <button class="btn btn-outline-secondary" type="submit">Discover</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="container cards-Container mt-5">
+        <h1 class=" headline-font">Fascinating Families</h1>
+        <p>Dive into distinct classifications and discover unique evolutionary traits.</p>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- <div class="cardLarget position-relative">
+                    <img class="cardLargest-Img rounded-4" width="100%" src="" alt="">
+                    <div  class="position-absolute bottom-0 start-0 p-3 text-white">
+                        <h3 class="text-light headline-font">Birds of Prey</h3>
+                        <p class="text-light headline-font">Masters of the sky equipped with keen eyesight and powerful talons.</p>
+                    </div>
+                </div> -->
+                <div class="card-small position-relative categoryCard" data-category="raptors">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZkXWxFxzja4qH0o3yudNzWNhO8cqA6PNTZm3wzE9PVKF5tuWEQY5fKRJDI2Gc_9ZIGg-6hJQqhUQUABQk2QwTGbYrmJQ808w2JYhZb4ikyFTymCcZc6F2eOudSym0LTxZyLl3j3IXErr5Lk77aGNhoqh63Zcz2x-z7h4YJdgDdfhC65iOERv5DBdvb7T8ZhbrWH_cgkXq96dIvzkhTHofBR_6SvBQGLaA_kCIrJoy4lZPRb9eHLB5nw" class="w-100 object-fit-cover rounded-4" alt="Songbirds">
+                    <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                        <h3>Birds of Prey</h3>
+                        <p class="mb-0">Masters of the sky equipped with keen eyesight and powerful talons.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex flex-column gap-4">
+                <div class="card-small position-relative categoryCard" data-category="songbird">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYnRqn5QF-oMawjJFS-X7cVZ8oWAkQoZcb5ShuzwjIZr3kN04wcRgLnW5f5eaoTChCdM20fjNz4Zmyd_8MPtEYXpuyhkgyBDg8RrhFaSRFwcOGtF9OjYsRP8M0QQFxA-PFoaxrSiC3CjpoR1aim7niHmsxG952Ym_dJET1NMG2trAGXkG4bOZb7xtn9uOXhIbGVlh1r9N9o92Y970o0jAP7doOGljXUVRd3OnT0sD8-g54YLqcVQ9jmA" class="w-100 object-fit-cover rounded-4" alt="Songbirds">
+                    <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                        <h3>Songbirds</h3>
+                        <p class="mb-0">Melodic voices of the canopy.</p>
+                    </div>
+                </div>
+                <div class="card-small position-relative categoryCard" data-category="seabirds">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvAqLcVA-wdF1yGkGQlZYSCf3Oyq-3LgcQWr6Xg2FOeOYjus89X6xpSHnbwHLNNBAMZTJuwz-f1297d_bAfvpCA2iV4-dc9kHS-oclHQdWDpPpKEuUUWFLHCqIxqpP8dfrTdzk4zzhgcOH3y49ogkgmplkJzoSsxuf1sUCPW_MCDFKr3yvpP5hrrwRqKhrXg9EYSHfflo7CsllNZMc5NwUTJELnifSUPjzCZ2OBQn8bpLMtpiiASs8YA" class="w-100 object-fit-cover rounded-4" alt="Songbirds">
+                    <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                        <h3>Seabirds</h3>
+                        <p class="mb-0">Navigators of the open ocean.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <section class=" container-fluid custom-bg"> 
+        <div class="row p-3" >
+            <div class="col-lg-5 d-flex justify-content-center">
+                <img class="h-100 w-50 rounded-4" src="./assests/images/Kingfisher.jpg" alt="KingFisher Img">
+            </div>
+            <div class="col-lg-6 d-flex gap-3 flex-column py-5">
+                <h1 class="headline-font fw-bolder text-md-center text-lg-start">Common <br> KingFisher</h1>
+                <p class="text-md-center text-lg-start">Alcedo atthis</p>
+                <p class="text-md-center text-lg-start">Renowned for its brilliant metallic blue back and coppery underparts, the Common Kingfisher is a master angler. It dives with astonishing speed into shallow rivers and streams to catch small fish, a true spectacle of nature's precision.</p>
+                <div class="row gap-1 justify-content-center  flex-lg-nowrap">
+                    <div class="col-sm-6 col-md-5 col-lg-6 
+                     habitatAndDiet bg-white rounded-4 p-2">
+                        <h6>Habitat</h6>
+                        <h4>Rivers & Streams</h4>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-6 habitatAndDiet bg-white rounded-4 p-2 ">
+                        <h6>Diet</h6>
+                        <h4>Small Fish, Insects</h4>
+                    </div>
+                </div>
+                <button class="btn btn-outline-secondary w-25 p-2" id="kingFisherbtn">READ Full Profile -></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light">
+            <div class="container d-flex flex-column justify-content-around p-5 ">
+            <div class="row ">
+                <div class="col-lg-3">
+                    <h1>Feather Gallery</h1>
+                    <p>©2026 Feather Gallery. Ornithological Excellence.</p>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled text-lg-center d-flex flex-column gap-2">
+                        <h4>Platform</h4>
+                        <li><a href="/pages/Explore.html"  class="text-decoration-none text-black" >Explore</a></li>
+                        <li><a href="/pages/Category.html" class="text-decoration-none text-black" >Category</a></li>
+                        <li><a href="/pages/BirdMan.html"  class="text-decoration-none text-black" >Bird Man</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 onhover">
+                    <ul class="list-unstyled text-lg-center d-flex flex-column gap-2">
+                        <h4>API Credits</h4>
+                        <li>Gemini</li>
+                        <li>Groq</li>
+                        <li>Unsplash</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled text-lg-center d-flex flex-column gap-2">
+                        <h4>Connect</h4>
+                        <div class="d-flex justify-content-lg-center gap-4">
+                            <li class="custom-bg p-2 rounded-circle tohoverIcons"><i class="bi bi-github"></i></li>
+                            <li class="custom-bg p-2 rounded-circle tohoverIcons"><i class="bi bi-linkedin"></i></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./scripts/main.js"></script>   
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* outline: 1px red solid; */
+}
+:root
+{
+    --primary : #2D6A4F;
+    --bs-primary : #2D6A4F;
+
+    --secondary :#40916C;
+    --bs-secondary : #40916C;
+
+}
+body{
+    background-color: #40916d3f;
+    font-family: "Inter", Playfair Display;
+}
+.text-primary1{
+    color: var(--primary);
+}
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-style:solid ;
+    text-decoration-color: var(--bs-primary);
+    text-underline-offset: 8px;
+}
+.btn-outline-primary {
+    color: #2D6A4F;
+    border-color: #2D6A4F;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background-color: #2D6A4F;
+    border-color: #2D6A4F;
+    color: #ffffff;
+}
+.btn-outline-secondary{
+    color: white;
+    background-color: var(--bs-secondary);
+    border-color: #2D6A4F;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+    background-color: var(--bs-primary);
+}
+.headline-font
+{
+    font-family: "Playfair Display",Inter;
+}
+.custom-bg
+{
+    /* min-height: 600px; */
+    background-color: #D1FEE5;
+}
+.hero-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: #111; Fallback dark background */
+}
+
+/* The blurred backdrop that fills the widescreen gaps */
+/* #heroBlurBg {
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px) brightness(0.9);
+    transform: scale(1.1); 
+    z-index: 0;
+} */
+
+
+#birdHeroImg {
+    width: 100%;
+    max-height: 700px;
+    /* object-fit: contain;  */
+}
+.main-contents
+{
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.main-content-h1
+{
+    font-size: clamp(1.8rem, 6vw, 7rem);
+}
+.main-content-p
+{
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+.atGlance 
+{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.ApperanceImg
+{
+    max-height: auto;
+    width: 100%;
+}
+
+.tohoverIcons:hover
+{
+    transform: scale(1.5);
+}
+footer li:hover
+{
+    color: darkgreen;;
+}
+footer ul li a:hover {
+    color: darkgreen !important; 
+}
+
+@media screen and (max-width : 375px ) {
+    .main-contents
+    {
+        padding: 12px;
+    }
+    .main-content-h1
+    {
+        font-size: clamp(2rem, 4vw, 5rem);
+    }
+    .main-content-p
+    {
+        font-size: clamp(0.9rem, 1.2vw, 3rem);
+    }
+}

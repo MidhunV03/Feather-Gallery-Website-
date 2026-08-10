@@ -1,0 +1,18 @@
+{
+  "name": "feather-gallery-express",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Feather Gallery - Express backend with HTML/CSS frontend",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  }
+}

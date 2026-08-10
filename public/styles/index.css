@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --primary : #2D6A4F;
+    --bs-primary : #2D6A4F;
+
+    --secondary :#40916C;
+    --bs-secondary : #40916C;
+
+}
+body{
+    background-color: #40916d3f;
+    font-family: "Inter", Playfair Display;
+}
+.text-primary1{
+    color: var(--primary);
+}
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-style:solid ;
+    text-decoration-color: var(--bs-primary);
+    text-underline-offset: 8px;
+}
+.btn-outline-primary {
+    color: #2D6A4F;
+    border-color: #2D6A4F;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background-color: #2D6A4F;
+    border-color: #2D6A4F;
+    color: #ffffff;
+}
+.btn-outline-secondary{
+    color: white;
+    background-color: var(--bs-secondary);
+    border-color: #2D6A4F;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+    background-color: var(--bs-primary);
+}
+.headline-font
+{
+    font-family: "Playfair Display",Inter;
+}
+.hero-section 
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-bg
+{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter:brightness(0.8) ;
+}
+.hero-contents{
+    max-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering technique */
+    width: 100%;
+}
+.hero-title{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.hero-Subtitle
+{
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+.hero-input
+{
+    opacity: 0.8;
+}
+
+.cardLarget{
+    width: 100%;
+    min-height: 480px;
+}
+.cardLargest-Img
+{
+    height: 100%;
+    transition: 0.6s ease;
+    object-fit: cover;
+}
+.card-small img
+{
+     transition: 0.6s ease;
+   
+}
+.cardLarget:hover .cardLargest-Img{
+    transform: scale(1.02);
+}
+.card-small:hover img{
+    transform: scale(1.02);
+}
+.custom-bg
+{
+    /* min-height: 600px; */
+    background-color: #D1FEE5;
+}
+
+/* input:focus{
+    outline: none; 
+    border: none;
+}
+
+input:a tive{
+    outline: none;
+} */
+.habitatAndDiet
+{
+/* width: auto; */
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.tohoverIcons:hover
+{
+    transform: scale(1.5);
+}
+footer li:hover
+{
+    color: darkgreen;;
+}
+footer ul li a:hover {
+    color: darkgreen !important; 
+}

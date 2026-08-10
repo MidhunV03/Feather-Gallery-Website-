@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Salim Ali - The Birdman of India</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="/styles/BirdMan.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg position-sticky top-0 bg-white z-2">
+        <div class="container d-flex justify-content-between ">
+        <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="/index.html">
+            <img src="/assests/images/logos/birdlogo 1.png" alt="Feather Gallery Logo" style="height: 40px; width: auto;" class="object-fit-contain">
+            <span class="text-primary1 headline-font fw-bold fs-4">Feather Gallery</span>
+        </a>
+            <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-primary1 nav-contents d-flex  gap-4 ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/index.html">Home</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="birdManPage">Bird Man of India</a>
+                    </li>
+                </ul>
+                <!-- <div >
+                    <button class="btn btn-outline-primary">Log In</button>
+                    <button class="btn btn-outline-secondary">Register</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+<br>    
+    <!-- HERO SECTION WITH FLOATING TITLE CARD -->
+<header class="hero-section position-relative vh-100">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                
+                <!-- Left Column: Title & Info Card -->
+                    <div class="col-lg-6">
+                        <div class="hero-card position-absolute">
+                            <h1 class="headline-font fw-bold text-success mb-2">Dr. Salim Ali</h1>
+                            <h5 class="headline-font text-muted fw-semibold">The Birdman of India</h5>
+                            <p class="text-secondary small mb-0 mt-2">(1896–1987)</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Salim Ali Image -->
+                    <div class="col-lg-6 hero-img-container position-relative">
+                        <img class="position-absolute hero-img" src="/assests/images/SalimAli.jpg" alt="Dr. Salim Ali Portrait/Nature">
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    <!-- QUOTE SECTION MATCHING REFERENCE -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="mb-3 text-success fs-3">“</div>
+            <p class="quote-text">
+                "My chief interest in bird study has always been its ecology, its life history under natural conditions."
+            </p>
+            <div class="quote-divider"></div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTIONS & BIO CARDS -->
+    <main class="container py-5">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="headline-font fw-bold text-dark mb-3">Pioneer of Indian Ornithology</h2>
+                <p class="text-muted">
+                    Dr. Salim Moizuddin Abdul Ali was the first Indian to conduct systematic bird surveys across the entire subcontinent. His monumental books and conservation efforts transformed how India views its natural wildlife and protected habitats.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card 1: Early Discoveries -->
+            <div class="col-lg-4">
+                <div class="custom-card h-100 shadow-sm">
+                    <img src="/assests/images/img for birMan Page.jpg" class="card-img-top card-img-custom" alt="Bird watching">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="headline-font fw-bold text-dark mb-3">The Spark</h4>
+                        <p class="text-muted small flex-grow-1">
+                            A childhood encounter with a yellow-throated sparrow sparked an unusual curiosity, routing his path from a hesitant student into the premier naturalist of Asia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Field Research -->
+            <div class="col-lg-4">
+                <div class="custom-card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=800&q=80" class="card-img-top card-img-custom" alt="Nature exploration">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="headline-font fw-bold text-dark mb-3">The Field Nomad</h4>
+                        <p class="text-muted small flex-grow-1">
+                            Traveling across remote forests, princely states, and high-altitude Himalayan ranges, he meticulously recorded species data that formed modern conservation baselines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Conservation Legacy -->
+            <div class="col-lg-4">
+                <div class="custom-card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1516728778615-2d590ea1855e?auto=format&fit=crop&w=800&q=80" class="card-img-top card-img-custom" alt="Wildlife Sanctuary">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="headline-font fw-bold text-dark mb-3">Saving Sanctuaries</h4>
+                        <p class="text-muted small flex-grow-1">
+                            His influential leadership helped safeguard priceless ecosystems like Bharatpur (Keoladeo National Park) and the Silent Valley from industrial destruction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4 border-top">
+        <p class="text-muted small mb-0">Tribute to Dr. Salim Ali — Preserving India's Biodiversity Heritage.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="/scripts/BirdMan.js"></script>
+</body>
+</html>
