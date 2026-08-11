@@ -28,7 +28,8 @@ async function birdDetails() {
 
         renderHero(bird);
         renderBaseDetails(bird);
-        renderAudioPlayer(bird);
+     
+        renderAudioPlayer(bird.commonName);
         initAnimations();
     } catch (error) {
         console.error("Bird details failed:", error);
@@ -70,11 +71,14 @@ function renderBaseDetails(bird) {
     });
 }
 
-function renderAudioPlayer(bird) {
+async function renderAudioPlayer(bird) {
+   
     const audioPlayer = document.getElementById("birdAudioPlayer");
     const audioBtn = document.getElementById("audioFallbackBtn");
     const metadataText = document.getElementById("audioMetadata");
-    const audioData = bird.audio;
+    const response  = await fetch(`/api/audio?query=${bird}`);
+    const audioData = await response.json();
+ 
 
     if (!audioPlayer || !audioBtn || !metadataText) return;
 
